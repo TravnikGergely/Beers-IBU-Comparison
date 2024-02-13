@@ -1,0 +1,566 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1082,924" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Dynamic;assembly=System.Linq.Expressions" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities.Windows.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="This Sequence compares beers based on their IBU value using the &quot;https://api.punkapi.com/v2/&quot; api as a source and compares with &quot;https://untappd.com/&quot; website's data.&#xD;&#xA;The output is an excel file in the project'S directory named &quot;ResultComparison.xlsx&quot;.&#xD;&#xA;" DisplayName="Main Sequence - Beers IBU comparison" sap:VirtualizedContainerService.HintSize="512,845.0000000000001" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="BeersDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable sap2010:Annotation.AnnotationText="The DataTable:&#xD;&#xA;&quot;ID&quot; (int), &quot;Beer Name&quot; (string), &quot;IBU Value Source1&quot; (string), &quot;ABV Value Source1&quot; (string), &quot;IBU Value Source2&quot; (string), &quot;Compare Result&quot; (string)&#xD;&#xA;ABV and Id is a technical column and will be deleted before writing to an excel file." DisplayName="Create DataTable to tore the data while processing" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Id&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Beer_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;IBU_x0020_Value_x0020_Source1&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ABV_x0020_Value_x0020_Source1&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;IBU_x0020_Value_x0020_Source2&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Compare_x0020_Result&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+      <ui:BuildDataTable.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">BeersDataTable</CSharpReference>
+        </OutArgument>
+      </ui:BuildDataTable.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BuildDataTable>
+    <Sequence DisplayName="Sequence To populate the datatable with source 1" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" Name="PageCounter" />
+        <Variable x:TypeArguments="x:Int32" Default="40" Name="BeerPerPage" />
+        <Variable x:TypeArguments="x:String" Name="ResponseJson" />
+        <Variable x:TypeArguments="x:Boolean" Name="ThereAreBeersToGo">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Boolean" Value="True" />
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:Int32" Name="MaxBeersCount">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:Int32" Value="500" />
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap2010:Annotation.AnnotationText="Setting PageCounter to 1  as a starting point.&#xD;&#xA;" DisplayName="Assign PageCounter " sap:VirtualizedContainerService.HintSize="434,127" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Int32">
+            <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">PageCounter</CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Int32">1</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Using the MaxBeersCount and the ResponseJson we van determine weather there are more data to read or weather we reached the desired amount of data." DisplayName="Read API data while end of data or limit reached" sap:VirtualizedContainerService.HintSize="434,809" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+        <ui:InterruptibleDoWhile.Body>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,612" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd1:DynamicObject" Name="ResponseProcessed" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" sap2010:Annotation.AnnotationText="Call the API (https://api.punkapi.com/v2/) with a PageCounter value as the page number and with BeerPerPage variable to set how many beers data we would like to process at a time.&#xD;&#xA;" AuthenticationType="None" BodyFormat="application/xml" DisplayName="Http Request to get beers json" EnableSSLVerification="True" sap:VirtualizedContainerService.HintSize="334,227" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" TimeoutMS="6000">
+              <ui:HttpClient.Attachments>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Attachments>
+              <ui:HttpClient.Cookies>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Cookies>
+              <ui:HttpClient.EndPoint>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2" xml:space="preserve">"https://api.punkapi.com/v2/beers?page=" + PageCounter.ToString() +  "&amp;per_page=" + BeerPerPage.ToString()</CSharpValue>
+                </InArgument>
+              </ui:HttpClient.EndPoint>
+              <ui:HttpClient.Headers>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Headers>
+              <ui:HttpClient.Parameters>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.Parameters>
+              <ui:HttpClient.Result>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ResponseJson</CSharpReference>
+                </OutArgument>
+              </ui:HttpClient.Result>
+              <ui:HttpClient.UrlSegments>
+                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+              </ui:HttpClient.UrlSegments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:HttpClient>
+            <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="In this code block we deserialize the json and save the relevant data into our DataTable untill we reach the MaxBeersCount limit.&#xD;&#xA;Also incrementing the PageCounter&#xD;&#xA;" Code="try{&#xD;&#xA;&#x9;//Deserialize the http request's response(plain json string)&#xD;&#xA;&#x9;var desJson = JsonConvert.DeserializeObject&lt;dynamic&gt;(ResponseJsonArg);&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Base state: no beer loaded&#xD;&#xA;&#x9;ThereAreBeersToGoArg = false;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Foreach instance of a beer&#xD;&#xA;&#x9;foreach (var beer in desJson)&#xD;&#xA;&#x9;{    &#xD;&#xA;&#x9;&#x9;//Add current beer's relevant data to datatable&#xD;&#xA;&#x9;&#x9;BeersDataTableArg.Rows.Add(new object[] { &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;int.Parse(beer.id.ToString()),&#x9;&#x9;&#x9;//id&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;beer.name,&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//name&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;beer.ibu,&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//ibu&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;beer.abv,&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;//abv&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;string.Empty,&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// ibu s2&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;string.Empty&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// compare result&#xD;&#xA;&#x9;&#x9;});&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;//Because we found at least one beer we will try to load the next page of the API's response&#xD;&#xA;&#x9;&#x9;ThereAreBeersToGoArg = true;&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;if (BeersDataTableArg.RowCount() &gt;= MaxBeersCountArg){&#xD;&#xA;&#x9;&#x9;&#x9;return;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//After this block the next page's number to load&#xD;&#xA;&#x9;PageCounterArg +=1;&#xD;&#xA;}&#xD;&#xA;catch(Exception e){&#xD;&#xA;&#xD;&#xA;&#x9;string message = e.Message;&#xD;&#xA;&#x9;if(e.InnerException != null){&#xD;&#xA;&#x9;&#x9;message += &quot;\n&quot; + e.InnerException.Message;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Log the error message in the output window (for now)&#xD;&#xA;&#x9;Console.WriteLine(message);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" DisplayName="Invoke Code - Json processing" sap:VirtualizedContainerService.HintSize="334,257" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="ResponseJsonArg">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">ResponseJson</CSharpValue>
+                </InArgument>
+                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="BeersDataTableArg">
+                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">BeersDataTable</CSharpReference>
+                </InOutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ThereAreBeersToGoArg">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">ThereAreBeersToGo</CSharpReference>
+                </OutArgument>
+                <InOutArgument x:TypeArguments="x:Int32" x:Key="PageCounterArg">
+                  <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">PageCounter</CSharpReference>
+                </InOutArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="MaxBeersCountArg">
+                  <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">MaxBeersCount</CSharpValue>
+                </InArgument>
+              </ui:InvokeCode.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeCode>
+          </Sequence>
+        </ui:InterruptibleDoWhile.Body>
+        <ui:InterruptibleDoWhile.Condition>
+          <CSharpValue x:TypeArguments="x:Boolean" DisplayName="C sharp value" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">ThereAreBeersToGo &amp;&amp; BeersDataTable.RowCount() &lt; MaxBeersCount</CSharpValue>
+        </ui:InterruptibleDoWhile.Condition>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InterruptibleDoWhile>
+    </Sequence>
+    <Sequence DisplayName="Sequence to populate the datatable with source 2" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="We open the search page of the source 2 " AttachMode="ByInstance" DisplayName="Use Browser Chrome: Untappd search page" sap:VirtualizedContainerService.HintSize="506,1875" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7072840a-b9a8-4bd5-8c63-47385b6593c2" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,1626" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="We loop through the DataTable BeersDtaTable" DisplayName="For Each Row in Data Table - BeersDtaTable" sap:VirtualizedContainerService.HintSize="410,1511" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1292" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="tmpIBU" />
+                        <Variable x:TypeArguments="sd:DataTable" Name="SearchResultData" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Typing the current row's beername into the searchbar&#xD;&#xA;" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search-term'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,263" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7072840a-b9a8-4bd5-8c63-47385b6593c2" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://untappd.com/search?" DesignTimeRectangle="480, 323, 509, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT search-term'" FullSelectorArgument="&lt;webctrl id='search-term' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-term' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="379cfcbb-cf12-4655-a6ec-03a40ff714af" InformativeScreenshot="fcf842e121d7f2d7206531cfff718988.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CvElementArea="1001, 323, 133, 47" CvTextArea="1030, 336, 73, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1003, 326, 128, 42" ElementType="Button" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-label='search button' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='search button' tag='INPUT' type='submit' class='' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">CurrentRow["Beer Name"].ToString()</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" sap2010:Annotation.AnnotationText="Clicking to the search button&#xD;&#xA;" ClickType="Single" DisplayName="Click 'INPUT'" sap:VirtualizedContainerService.HintSize="334,202" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7072840a-b9a8-4bd5-8c63-47385b6593c2" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://untappd.com/search?" CvElementArea="1001, 323, 133, 47" CvTextArea="1030, 336, 73, 20" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="994, 316, 128, 42" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-label='search button' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='search button' tag='INPUT' type='submit' class='' aaname='' /&gt;" Guid="8c270087-7bd0-4a4b-9476-d448f6e61d12" InformativeScreenshot="7c184ba2c3f3c2e80168aee467322f6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="472, 313, 509, 44" ElementType="InputBox" FriendlyName="'INPUT search-term'" FullSelectorArgument="&lt;webctrl id='search-term' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-term' tag='INPUT' type='text' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NExtractData sap2010:Annotation.AnnotationText="We extract the result of the search into a datatable" AppendResults="False" ContinueOnError="True" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Name' ReferenceName='Column2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='ABV' ReferenceName='Column0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='IBU' ReferenceName='Column1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,189" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="5" ScopeIdentifier="7072840a-b9a8-4bd5-8c63-47385b6593c2" Version="V3">
+                        <uix:NExtractData.DataTable>
+                          <InOutArgument x:TypeArguments="sd:DataTable">
+                            <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">SearchResultData</CSharpReference>
+                          </InOutArgument>
+                        </uix:NExtractData.DataTable>
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="472, 499, 652, 559" DesignTimeScaleFactor="1" FriendlyName="'FDGB Und'" FullSelectorArgument="&lt;webctrl class='results-container' parentid='slide' tag='DIV' /&gt;" Guid="47782887-3c18-4c83-901c-96ebc72915dd" InformativeScreenshot="2b98f89ae9f1b93160d4c3ee2b9e56af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Untappd Beer Search | Untappd' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                        </uix:NExtractData.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NExtractData>
+                      <ui:InvokeCode ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="This Code tries fin the best match for the current beer that we searched for. &#xD;&#xA;The logic is that the name should contain the search text and it is ideal that the ABV value match  and the IBU value is not &quot;N/A&quot;&#xD;&#xA;" Code="try{&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Setting local variables&#xD;&#xA;&#x9;string sourceABV = CurrentRowArg[&quot;ABV Value Source1&quot;].ToString();&#xD;&#xA;&#x9;string sourceName = CurrentRowArg[&quot;Beer Name&quot;].ToString();&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Get the rows where the name is present &#xD;&#xA;&#x9;var searchName = SearchResultArg.AsEnumerable().Where( x =&gt; &#xD;&#xA;&#x9;&#x9;x[&quot;Name&quot;].ToString().Replace(&quot;,&quot;,&quot;&quot;).Replace(&quot;-&quot;,&quot;&quot;).Replace(&quot;.&quot;,&quot;&quot;).Contains(sourceName)&#xD;&#xA;&#x9;);&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//If we did not find any row with the name, we store &quot;Not Found&quot; and exit&#xD;&#xA;&#x9;if (searchName.Count() ==  0){&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;IBU Value Source2&quot;] = &quot;Not Found&quot;;&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;Compare Result&quot;] = &quot;Not Found&quot;;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;return;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Search further with the rows where IBU is not &quot;N/A&quot;&#xD;&#xA;&#x9;var searchNameAndIBU = searchName.Where( x=&gt; &#xD;&#xA;&#x9;&#x9;!x[&quot;IBU&quot;].ToString().Contains(&quot;N/A&quot;)&#xD;&#xA;&#x9;);&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//If we did not find rows with IBU values so we store &quot;N/A&quot; abd return.&#xD;&#xA;&#x9;if (searchNameAndIBU.Count() == 0){&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;IBU Value Source2&quot;] = &quot;N/A&quot;;&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;Compare Result&quot;] = &quot;Not Found&quot;;&#xD;&#xA;&#x9;&#x9;return;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//We search further with the ABV value&#xD;&#xA;&#x9;var searchNameAndIBUAndABV = searchNameAndIBU.Where( x=&gt; &#xD;&#xA;&#x9;&#x9;x[&quot;ABV&quot;].ToString().Contains(sourceABV)&#xD;&#xA;&#x9;);&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;string result;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;// We found row(s) where the name is present, ibu is not &quot;N/A&quot; and ABV is the same&#xD;&#xA;&#x9;if (searchNameAndIBUAndABV.Count() != 0){&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Store the IBU of the first found row &#xD;&#xA;&#x9;&#x9;result = searchNameAndIBUAndABV.First()[&quot;IBU&quot;].ToString();&#xD;&#xA;// Logging to debug if needed&#x9;&#x9;&#xD;&#xA;//&#x9;&#x9;Console.WriteLine(&quot;Name: &quot;  +searchNameAndIBUAndABV.First()[&quot;Name&quot;] + &quot;\n&quot; +&#xD;&#xA;//&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;ABV: &quot;  +searchNameAndIBUAndABV.First()[&quot;ABV&quot;] + &quot;\n&quot; +&#xD;&#xA;//&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;IBU: &quot;  +searchNameAndIBUAndABV.First()[&quot;IBU&quot;] + &quot;\n&quot;&#xD;&#xA;//&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Remove the &quot; IBU&quot; from the string&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;IBU Value Source2&quot;] = result.Substring(0, result.Length - 4);&#xD;&#xA;&#x9;} &#xD;&#xA;&#x9;&#xD;&#xA;&#x9;// We did not find row(s) where the name is present, ibu is not &quot;N/A&quot; and ABV is the same&#xD;&#xA;&#x9;// So we select from the collection where the name and ibu conditions met&#xD;&#xA;&#x9;else {&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Store the IBU of the first found row &#xD;&#xA;&#x9;&#x9;result = searchNameAndIBU.First()[&quot;IBU&quot;].ToString();&#xD;&#xA;// Logging to debug if needed&#xD;&#xA;//&#x9;&#x9;Console.WriteLine(&quot;Name: &quot;  +searchNameAndIBU.First()[&quot;Name&quot;] + &quot;\n&quot; +&#xD;&#xA;//&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;ABV: &quot;  +searchNameAndIBU.First()[&quot;ABV&quot;] + &quot;\n&quot; +&#xD;&#xA;//&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;IBU: &quot;  +searchNameAndIBU.First()[&quot;IBU&quot;] + &quot;\n&quot;&#xD;&#xA;//&#x9;&#x9;);&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;// Remove the &quot; IBU&quot; from the string&#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;IBU Value Source2&quot;] = result.Substring(0, result.Length - 4);&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;// Compare IBU Values&#xD;&#xA;&#x9;CurrentRowArg[&quot;Compare Result&quot;] = &#xD;&#xA;&#x9;&#x9;CurrentRowArg[&quot;IBU Value Source2&quot;].ToString().Trim() == CurrentRowArg[&quot;IBU Value Source1&quot;].ToString().Trim() ? &#xD;&#xA;&#x9;&#x9;&#x9;&quot;OK&quot; :&#xD;&#xA;&#x9;&#x9;&#x9;&quot;ERROR - Values does not match&quot;;&#xD;&#xA;}&#xD;&#xA;catch(Exception e){&#xD;&#xA;&#xD;&#xA;&#x9;string message = e.Message;&#xD;&#xA;&#x9;if(e.InnerException != null){&#xD;&#xA;&#x9;&#x9;message += &quot;\n&quot; + e.InnerException.Message;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//Log the error message in the output window (for now)&#xD;&#xA;&#x9;Console.WriteLine(message);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="334,273" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+                        <ui:InvokeCode.Arguments>
+                          <InOutArgument x:TypeArguments="sd:DataRow" x:Key="CurrentRowArg">
+                            <CSharpReference x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">CurrentRow</CSharpReference>
+                          </InOutArgument>
+                          <InArgument x:TypeArguments="sd:DataTable" x:Key="SearchResultArg">
+                            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">SearchResultData</CSharpValue>
+                          </InArgument>
+                        </ui:InvokeCode.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeCode>
+                      <ui:CommentOut sap2010:Annotation.AnnotationText="This part of the workflow is to debug the process therefor it is commented out&#xD;&#xA;" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,441" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_6">
+                              <ui:LogMessage.Message>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26" xml:space="preserve">"Name: "  +CurrentRow["Beer Name"] + "\n" +
+"ABV: "  +CurrentRow["ABV Value Source1"] + "\n" +
+"IBU: "  +CurrentRow["IBU Value Source1"] + "\n"</CSharpValue>
+                                </InArgument>
+                              </ui:LogMessage.Message>
+                            </ui:LogMessage>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+                              <ui:LogMessage.Level>
+                                <InArgument x:TypeArguments="ui:LogLevel">
+                                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                                </InArgument>
+                              </ui:LogMessage.Level>
+                              <ui:LogMessage.Message>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27" xml:space="preserve">"IBU: "  +CurrentRow["IBU Value Source2"] + "\n"</CSharpValue>
+                                </InArgument>
+                              </ui:LogMessage.Message>
+                            </ui:LogMessage>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <ui:ForEachRow.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">BeersDataTable</CSharpValue>
+                  </InArgument>
+                </ui:ForEachRow.DataTable>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAcJJREFUWEftl71Lw0AYh0PVWkq1ipZSxA9EEP8UN0c3Rzdx6SKICBUUiiguFRE0ix8IbRepdEgcxDoIbioILTjUQYjg0KHD672R1Lvr4V0CTZcEHpJwb/t77u7NcBpeYGhTYGoGwSKAD+Qxkw73K5jGsiXIQ54b8BMDBUQDfmF1WwACgUDAs0D9Mtx6/rqKMmNu8CTwfBSFnYVxqF+E4fMsBrerc+Q+IKyV4XkFTpeT8K7H4C49Cw9rM8IaFTwLfBcjdjjO/kOPC2tU8CSAe14hs8ZwnL25FQer2CusleFa4O0gaQc7VI8HYXN+0qa0Piz8zX+4EqjlRpnwx41pOCG94Agglay7ZlQWaFz3MeHI624KCukRRgC/DjfboSTQLIdae+6ADYhSGLZNQmmJw6UUNEoh4X/xKAnw+47QnX+f/esDB9V+kApgEB+OS8/Xna8k2iRqen9bHY9UgF96/Oxw6fm6xk0I9hbHGIF98s7X8UgFnjITjIAo3KGqRxgBbFBRHY1UoFnugRey5Nh0tVxCWENjZobspsS7SiNKBTpNIBAIoEA3jmUtUAAPpcLBjmNohe4fTqkTsl+HVJys8RuuaT9V4K802Ub/BAAAAABJRU5ErkJggg==" InformativeScreenshot="f016874f52706741ca2b74f2e431eca1.jpg" Selector="&lt;html app='chrome.exe' title='Home' /&gt;" Title="Home" Url="https://untappd.com/search" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" sap2010:Annotation.AnnotationText="Before writeing the results into an excel file we delete the Id column" ColumnName="Id" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_3">
+      <ui:RemoveDataColumn.DataTable>
+        <InOutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">BeersDataTable</CSharpReference>
+        </InOutArgument>
+      </ui:RemoveDataColumn.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RemoveDataColumn>
+    <ui:RemoveDataColumn Column="{x:Null}" ColumnIndex="{x:Null}" sap2010:Annotation.AnnotationText="Before writeing the results into an excel file we delete the ABV column" ColumnName="ABV Value Source1" DisplayName="Remove Data Column" sap:VirtualizedContainerService.HintSize="450,85" sap2010:WorkflowViewState.IdRef="RemoveDataColumn_1">
+      <ui:RemoveDataColumn.DataTable>
+        <InOutArgument x:TypeArguments="sd:DataTable">
+          <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">BeersDataTable</CSharpReference>
+        </InOutArgument>
+      </ui:RemoveDataColumn.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:RemoveDataColumn>
+    <Sequence DisplayName="Sequence to write out the datatable into an excelfile" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,1091" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1004" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" sap2010:Annotation.AnnotationText="Creating or opening the ResultComparison.xslx file&#xD;&#xA;" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,893" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="ResultComparison">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,576" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="scg:List(x:String)" Name="Sheets" />
+                        <Variable x:TypeArguments="x:String" Name="FirstSheet" />
+                        <Variable x:TypeArguments="ue:ISheetRef" Name="MySheet" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:InsertSheetX sap2010:Annotation.AnnotationText="Insert a new sheet named Beer IBU Comparison_ current date" DisplayName="Insert Sheet" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="InsertSheetX_2">
+                        <ueab:InsertSheetX.Name>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">"Beer IBU Comperison_" + DateTime.Now.ToString("yyyy_MM_dd")</CSharpValue>
+                          </InArgument>
+                        </ueab:InsertSheetX.Name>
+                        <ueab:InsertSheetX.ReferenceNewSheetAs>
+                          <OutArgument x:TypeArguments="ue:ISheetRef">
+                            <CSharpReference x:TypeArguments="ue:ISheetRef" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">MySheet</CSharpReference>
+                          </OutArgument>
+                        </ueab:InsertSheetX.ReferenceNewSheetAs>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ueab:InsertSheetX.Workbook>
+                          <InArgument x:TypeArguments="ue:IWorkbookQuickHandle">
+                            <CSharpValue x:TypeArguments="ue:IWorkbookQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">Excel</CSharpValue>
+                          </InArgument>
+                        </ueab:InsertSheetX.Workbook>
+                      </ueab:InsertSheetX>
+                      <ueab:WriteRangeX sap2010:Annotation.AnnotationText="Writing the BeersDataTable into the new sheet&#xD;&#xA;" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="434,205" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False">
+                        <ueab:WriteRangeX.Destination>
+                          <InArgument x:TypeArguments="ue:IReadWriteRangeRef">
+                            <CSharpValue x:TypeArguments="ue:IReadWriteRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">MySheet</CSharpValue>
+                          </InArgument>
+                        </ueab:WriteRangeX.Destination>
+                        <ueab:WriteRangeX.Source>
+                          <InArgument x:TypeArguments="sd:DataTable">
+                            <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">BeersDataTable</CSharpValue>
+                          </InArgument>
+                        </ueab:WriteRangeX.Source>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ueab:WriteRangeX>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+      </ueab:ExcelProcessScopeX>
+    </Sequence>
+  </Sequence>
+</Activity>
